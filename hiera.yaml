@@ -9,4 +9,6 @@ hierarchy:
     data_hash: yaml_data
     paths:
       - "nodes/%{trusted.certname}.yaml"
+      - "environments/%{trusted.extensions.pp_environment}.yaml"
+      - "datacenters/%{datacenter}.yaml"
       - "common.yaml"
