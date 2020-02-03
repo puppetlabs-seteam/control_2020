@@ -74,6 +74,7 @@ mod 'puppet-yum', '4.1.0'
 mod 'saz-sudo', '6.0.0'
 mod 'saz-limits', '3.0.4'
 mod 'puppet-selinux', '3.1.0'
+mod 'ayohrling-local_security_policy', '0.6.3'
 
 # Demo modules
 mod 'secteam_cis',
