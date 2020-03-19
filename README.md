@@ -73,44 +73,6 @@ To get started with using the control-repo template in your own environment and 
 1. Push the production branch of the repository from your machine up to your git server
     * `git push origin production`
 
-### Bitbucket/Stash
-
-1. Install Bitbucket
-    * <https://www.atlassian.com/software/bitbucket/download>
-1. Make a `Project` called `puppet` (with a short name of `PUP`)
-1. Create a repository called `control-repo`
-1. Create a user called `r10k` with a password of `puppet`.
-    * Make the r10k user an admin of the `PUP` project.
-1. Either use the admin user to test pushing code, or create a user for yourself and add your SSH key to that user.
-    * If making a user for yourself, give your user account read/write or admin privilege to the `PUP` project.
-1. Clone this control repository to your laptop/workstation
-    * `git clone <repository url>`
-    * `cd control-repo`
-1. Remove this repository as the origin remote
-    * `git remote remove origin`
-1. Add your internal repository as the origin remote
-    * `git remote add origin <url of your bitbucket repository>`
-1. Push the production branch of the repository from your machine up to your git server
-    * `git push origin production`
-
-### GitHub
-
-1. Prepare your local git client to authenticate with GitHub.com or a local GitHub Enterprise instance.
-    * <https://help.github.com/articles/generating-ssh-keys/>
-    * <https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>
-1. Create a repository called `control-repo` in your user account or organization. Ensure that "Initialize this repository with a README" is not selected.
-    * <https://help.github.com/articles/creating-a-new-repository/>
-1. Make a note of your repository URL (HTTPS or SSH, depending on your security configuration).
-1. Clone this control repository to your laptop/workstation:
-    * `git clone <repository url>`
-    * `cd control-repo`
-1. Remove this repository as the origin remote:
-    * `git remote remove origin`
-1. Add your internal repository as the origin remote:
-    * `git remote add origin <url of your github repository>`
-1. Push the production branch of the repository from your machine up to your git server
-    * `git push origin production`
-
 ## Code Manager Setup
 
 If you use Puppet Enterprise and have not yet enabled and configured Code Manager, in addition to reading the official [documentation](https://puppet.com/docs/pe/latest/code_management/code_mgr.html) for enabling it, you may want to look at the Ramp-Up Program's control repository instead of this one. It's similar to this repo except that it has batteries included, so to speak. There are pre-built profiles for configuring Code Manager, generating SSH keys, and setting up your Git server to work with Code Manager.
