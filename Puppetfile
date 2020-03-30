@@ -15,7 +15,7 @@ end
 mod 'puppetlabs-acl', :latest
 mod 'puppetlabs-accounts', :latest
 mod 'puppetlabs-apache', :latest
-mod 'puppetlabs-apt',               :latest
+mod 'puppetlabs-apt', :latest
 mod 'puppetlabs-aws', :latest
 mod 'puppetlabs-amazon_aws', :latest
 mod 'puppetlabs-azure', :latest
@@ -70,6 +70,7 @@ mod 'puppetlabs-tagmail', :latest
 mod 'puppetlabs-transition', :latest
 mod 'puppetlabs-vcsrepo', :latest
 
+# Community modules
 mod 'puppet-yum', :latest
 mod 'saz-sudo', :latest
 mod 'saz-limits', :latest
