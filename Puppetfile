@@ -84,8 +84,8 @@ mod 'secteam_cis',
     branch:         :control_branch,
     default_branch: default_branch('production')
 
-mod 'infrateam_baseline',
-    git:            'https://github.com/puppetlabs-seteam/infrateam_baseline.git',
+mod 'infrateam_core',
+    git:            'https://github.com/puppetlabs-seteam/infrateam_core.git',
     branch:         :control_branch,
     default_branch: default_branch('production')
 
